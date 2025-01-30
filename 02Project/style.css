@@ -1,0 +1,437 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    border-box: 0px;
+}
+body {
+    
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: rgb(209, 243, 252); /* Navbar background color */
+    width: 100%;
+}
+
+/* Logo */
+.nav_logo .logo {
+    width: 70px; /* Adjust size */
+    height: auto;
+    border-radius: 50%;
+    
+}
+
+/* Navigation Links */
+.nav_links {
+    list-style: none;
+    display: flex;
+    gap: 100px;
+}
+
+.nav_links li {
+    display: inline-block;
+}
+
+.nav_links a {
+    text-decoration: none;
+    color: rgb(150, 139, 139);
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease-in-out;
+    border-radius: 10px;
+    /* transition: color 0.3s ease-in-out; */
+}
+
+.nav_links a:hover {
+    background-color: rgb(119, 102, 102);
+    color: rgb(209, 243, 252);
+}
+
+.home_container {
+    background-color: rgb(209, 243, 252);
+    padding: 25px 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home_container h1 {
+    font-size: 2rem;
+    color: rgb(119, 102, 102);
+    font-weight: bold;
+    margin-left: 30px;
+    text-transform: uppercase;
+}
+
+.home_container span {
+    font-size: 1.8rem;
+    margin-left:30px;
+}
+
+.home_container img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radiu: 10px:
+}
+
+.logo {
+    margin-left: 100px
+}
+
+.home_content {
+    display: flex;
+    justify-content: center; /* Centers items in the row */
+    align-items: flex-start; /* Aligns items at the top */
+    flex-wrap: nowrap; /* Prevents wrapping so all items stay in one line */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+}
+
+.content_container {
+    flex: 1; /* Ensures equal width for all items */
+    text-align: center; /* Centers text under image */
+}
+
+.content_container img {
+    width: 150px;
+    height: auto;
+    margin-bottom: 10px; /* Space between image & text */
+}
+
+/* Title Styling */
+.content_container h2 {
+    font-size: 1.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Paragraph Styling */
+.content_container p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.services_container {
+    background-color: rgb(178, 229, 166);
+}
+
+.service h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.service p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+.service_btn {
+    margin: 10px; /* Adds space around each button */
+    padding: 20px 30px; /* Increases button size */
+    font-size: 16px;
+    text-align: center;
+}
+
+.service_btn button {
+    font-size: 1.2rem;
+    padding: 10px;
+    border: none;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+
+.service_btn button:hover {
+    background-color: white;
+    color: rgb(178, 229, 166);
+    border-radius: 10px;
+}
+
+.services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    justify-content: center; /* Centers the grid */
+    gap: 20px; /* Space between images */
+    max-width: 900px;/*  Adjust based on your design */
+    margin: 0 auto; /* Centers the whole section */
+}
+
+.services img {
+    width: 100%; /* Makes images responsive */
+    max-width: 270px;
+    max-height: 150px; /* Adjust size as needed */
+    height: auto;
+    display: block; /* Removes extra spacing below images */
+    margin: 0 auto; /* Ensures images are centered inside the grid */
+}
+
+/* Use flexbox to center the content */
+.showmore_btn {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;     /* Center vertically */
+    height: 100%;            /* Full height of the page */
+}
+
+/* Optional: Style for the button */
+.showmore_btn button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 50px;
+    background-color: white;
+    color: rgb(150, 139, 139);
+    border: none;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.showmore_btn button:hover {
+    background-color: rgb(119, 102, 102);
+    color: rgb(178, 229, 166);
+}
+
+.container {
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto; /* Center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    margin-top: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    width: 100%; /* Ensures cards take full width */
+}
+
+.image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 200px;
+    height: auto;
+}
+
+.content {
+    flex: 2;
+    padding: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border: none;
+    color: white;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.green {
+    background-color: #5cb85c;
+}
+
+.blue {
+    background-color: #5bc0de;
+}
+
+.our_team {
+    background-color: rgb(240, 176, 219);
+}
+
+.team h2 {
+    font-size: 2rem;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.team p {
+    font-size: 1.2rem;
+    color: white;
+    text-align: center;
+}
+
+// cards
+
+.alumni_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Container for multiple alumni cards */
+.alumni_container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;  /* Ensures a gap between cards */
+    flex-wrap: wrap; /* Makes it responsive */
+    margin-bottom: 30px;
+}
+
+/* Individual Alumni Card */
+.alumni_card {
+    width: 250px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    padding: 10px;
+}
+
+/* Image container for alumni */
+.image_container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+/* Alumni Image */
+.image_container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Social Media Overlay (Hidden by default) */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+/* Social Media Icons */
+.overlay a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px;
+    border-radius: 50%;
+    transition: transform 0.3s, background 0.3s;
+}
+
+/* Hover Effect for Icons */
+.overlay a:hover {
+    transform: scale(1.2);
+    background: rgba(255, 255, 255, 0.6);
+}
+
+/* Show Overlay on Hover */
+.image_container:hover .overlay {
+    opacity: 1;
+}
+
+/* Alumni Info Section */
+.info {
+    padding: 10px;
+}
+
+/* Alumni Name */
+.info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(154, 132, 235);
+}
+
+/* Designation */
+.designation {
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 8px;
+}
+
+/* Description */
+.description {
+    font-size: 12px;
+    color: #777;
+    padding: 0 10px;
+}
+
+.blog_container {
+    background-color: rgb(209, 243, 252);
+}
+
+.blog_content h2 {
+    font-size: 2rem;
+    color: rgb(21, 59, 70);
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.blog_content p {
+    font-size: 1rem;
+    color: rgb(21, 59, 70);
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+
+
+
+
+
