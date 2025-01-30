@@ -1,0 +1,212 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    border-box: 0px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+navbar {
+    display: flex;
+    /* background-color: rgb(255, 251, 8); */
+    /* padding: 5px; */
+    /* position: sticky; */
+    
+}
+.logo {
+    width: 100px;
+    height: 100px;
+}
+
+.nav-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    list-style: none;
+    flex-grow: 1;
+}
+
+.nav-links li a {
+    margin-right: 70px;
+    padding-left: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px    
+}
+
+.nav-links li a:hover {
+    color: white;
+    background-color: rgb(71, 146, 134);
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+}
+
+.home_section  {
+    text-align: center;
+    color: white;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Dark overlay to make text stand out */
+    border-radius: 10px;
+
+}
+
+.home_section h1 {
+    font-size: 3.5rem;
+    margin-bottom: 10px;
+}
+
+.home_section span {
+    color: rgb(195, 247, 52);
+}
+
+.home_section p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.home_btn {
+    margin-top: 30px;
+}
+
+.home_btn button {
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    background-color: rgb(71, 146, 134);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.home_btn button:hover {
+    background-color:rgb(56, 126, 114); /* Darker shade on hover */
+}
+
+.home i {
+    margin-top: 40px;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
+
+.portfolio {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    font-size: 2rem;
+    margin: 15px;
+    color: rgb(102, 95, 95);
+}
+
+.portfolio span {
+    color: rgb(71, 146, 134);
+}
+
+.portfolio p {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    color: rgb(71, 146, 134);
+}
+
+.portfolio button {
+    font-size: 1rem;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: rgb(71, 146, 134);
+    color: white;    
+    border: none;
+}
+
+.portfolio_grid {
+    margin-top: 50px;
+    background-color: rgb(71, 146, 134);
+    font-size: 2rem;
+}
+
+.center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh; /* Full viewport height */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 items per row */
+    gap: 20px; /* Space between circles */
+    width: 800px; /* Fixed width */
+    max-width: 100%; /* Responsive */
+}
+
+.circle {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: rgb(71, 146, 134);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    transition: background-color 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.circle i {
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Overlay */
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.circle:hover .overlay {
+    opacity: 1;
+}
+
+.circle:hover i {
+    transform: scale(0); /* Hide icon on hover */
+}
+
+
+
+
+
+
