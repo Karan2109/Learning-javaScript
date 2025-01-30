@@ -181,7 +181,6 @@ navbar {
     transition: transform 0.3s ease-in-out;
 }
 
-/* Overlay */
 .overlay {
     position: absolute;
     width: 100%;
@@ -206,7 +205,201 @@ navbar {
 }
 
 
+/* About Section */
+.about {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #1abc9c; /* Greenish theme */
+    color: white;
+}
 
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+}
 
+.about p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: white;
+}
 
+/* Alumni Card Container */
+.alumni_card {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Makes it responsive */
+}
+
+/* Individual Alumni Card */
+.card {
+    width: 300px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    overflow: hidden;
+    position: relative;
+}
+
+/* Hover Effect */
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Alumni Image */
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 3px solid #007BFF;
+}
+
+/* Alumni Name */
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+/* Designation */
+.card .designation {
+    font-size: 14px;
+    font-weight: bold;
+    color: #007BFF;
+    margin-bottom: 10px;
+}
+
+/* Description */
+.card .description {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+
+// Contact Form
+
+/* Contact Section */
+.contact-section {
+    text-align: center;
+    padding: 50px;
+    width: 70%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.contact-section h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contact-section p {
+    font-size: 16px;
+    color: #777;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* Contact Container */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* Contact Form */
+.contact-form {
+    flex: 1;
+    text-align: left;
+}
+
+.form-group {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-left: 20px;
+    margin-bottom: 20px
+
+}
+
+.contact-form input {
+    width: 30%;
+}
+
+.contact-form textarea {
+    width: 50%;
+    resize: none;
+}
+
+.contact-form button {
+    width: 100px;;
+    padding: 10px;
+    background-color: #1abc9c;
+    color: white;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.contact-form button:hover {
+    background-color: #16a085;
+}
+
+/* Contact Info */
+.contact-info {
+    flex: 1;
+    text-align: left;
+    font-size: 16px;
+}
+
+.contact-info h3 {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+    color: #555;
+}
+
+.contact-info i {
+    margin-right: 10px;
+    color: #1abc9c;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+}
 
