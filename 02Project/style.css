@@ -406,32 +406,196 @@ p {
     padding: 0 10px;
 }
 
-.blog_container {
-    background-color: rgb(209, 243, 252);
+/* Wrapper to contain all styles (instead of applying styles to body) */
+.content-wrapper {
+    background: #c6e2ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
 }
 
-.blog_content h2 {
-    font-size: 2rem;
-    color: rgb(21, 59, 70);
+/* Section Styling */
+.recent-posts {
+    text-align: center;
+    padding: 50px 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+/* Heading Styles */
+.recent-posts h2 {
+    font-size: 30px;
+    color: #fff;
     font-weight: bold;
+}
+
+.sub-text {
+    color: #f5f5f5;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+/* Post Container */
+.posts-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Individual Post Card */
+.post-card {
+    background: white;
+    width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Post Image */
+.post-image {
+    width: 100%;
+    height: 180px;
+    background: #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.post-image img {
+    width: 293px;
+    height: 180px;
+    opacity: 0.5;
+}
+
+/* Post Title */
+.post-card h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Post Date */
+.date {
+    font-size: 12px;
+    color: #777;
+    margin-bottom: 8px;
+}
+
+/* Post Description */
+.post-description {
+    font-size: 14px;
+    color: #555;
+    padding: 0 10px;
+}
+
+/* Show More Button */
+.show-more {
+    margin-top: 30px;
+    background: white;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.show-more:hover {
+    background: #ddd;
+}
+
+/* Contact Container Styling */
+.contact_container {
+    width: 100%;
+    max-width: 600px;
+    margin: 50px auto; /* Centers the container */
+    text-align: center;
+    padding: 20px;
+    background:rgb(134, 130, 130);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading and Paragraph */
+.contact_container h2 {
+    font-size: 28px;
+    color: #fff;
+    margin-bottom: 10px;
     text-transform: uppercase;
-    margin-bottom: 10px;
-    text-align: center;
-    padding-top: 20px;
 }
 
-.blog_content p {
-    font-size: 1rem;
-    color: rgb(21, 59, 70);
-    font-weight: bold;
-    margin-bottom: 10px;
-    text-align: center;
-    padding-top: 20px;
+.contact_container p {
+    font-size: 14px;
+    color: #fff;
+    margin-bottom: 20px;
 }
 
+/* Contact Form */
+.contact_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centers the form elements */
+}
 
+/* Input Fields */
+.contact_form input {
+    width: 100%;
+    max-width: 400px; /* Limits input width */
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center; /* Centers the text inside input fields */
+}
 
+/* Button Styling */
+#contact_btn {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    margin-top: 10px;
+}
 
+#contact_btn:hover {
+    background: #0056b3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 15px;
+    margin-bottom: 0;
+    line-height: 1.5;
+    color: #fff;
+}
 
 
 
