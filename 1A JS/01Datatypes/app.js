@@ -46,7 +46,7 @@ console.log(1 + 2 + "2")
 console.log(true);
 console.log(false);
 console.log(+true);
-console.log(true+); // Wrong syntax
+// console.log(true+); // Wrong syntax
 console.log(+"");
 
 // Comparison of datatypes
