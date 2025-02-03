@@ -4,21 +4,21 @@
 // Array, Object, function
 
 //array
-const heros = ["Shaktiman","Krish", "DeadPool"];
+// const heros = ["Shaktiman","Krish", "DeadPool"];
 
-// object
+// // object
 
-const hero = {
-  name: "Shaktiman",
-  age: 35,
-  powers: ["superhuman strength", "superhuman speed", "superhuman agility"],
-  isAlive: true,
-};
+// const hero = {
+//   name: "Shaktiman",
+//   age: 35,
+//   powers: ["superhuman strength", "superhuman speed", "superhuman agility"],
+//   isAlive: true,
+// };
 
-// function
-const myFunction = function() {
-    console.log("Hello World!");
-};
+// // function
+// const myFunction = function() {
+//     console.log("Hello World!");
+// };
 
 /*
 Return type of variables in JavaScript
@@ -37,3 +37,27 @@ Return type of variables in JavaScript
        Object  =>  object
 
 */
+
+// ***********Memory*************
+
+// Stack Memory (Primitive Datatypes)
+// heap memory (Non-Primitive Datatypes)
+
+// let uname = "Karan";
+// let u_name = uname;
+// u_name = "Singh";
+
+// console.log(uname);
+// console.log(u_name);
+
+
+// const userone = {
+//   name: "Karan",
+//   age: 30,
+// };
+
+// const usertwo = userone;
+// usertwo.age = 35;
+
+// console.log(userone.age);
+
