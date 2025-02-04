@@ -52,11 +52,11 @@ console.log("DC heroes: ", dc_heroes);
 console.log(marvel_heroes.push(dc_heroes));
 console.log("Marvel heroes after pushing DC heroes: ", marvel_heroes);
 
-const all_heroes = marvel_heroes.concat(dc_heroes); // Combine two arrays
-console.log("All heroes: ", all_heroes);
+// const all_heroes = marvel_heroes.concat(dc_heroes); // Combine two arrays
+// console.log("All heroes: ", all_heroes);
 
-const all_heroes = [...marvel_heroes, ...dc_heroes]; //spread operator
- console.log("All heroes: ", all_heroes);
+// const all_heroes = [...marvel_heroes, ...dc_heroes]; //spread operator
+//  console.log("All heroes: ", all_heroes);
 
 // array within array nested array
 
