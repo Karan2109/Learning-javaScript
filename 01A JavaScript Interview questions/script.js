@@ -319,6 +319,68 @@ const FahrenheitTocelsius = () => {
 // console.log(fahrenheitTocelsius()); // Output: 0
 
 
+// Q22 how to convert kilometers into miles in Javascript
+
+function kmToMiles(km) {
+    return km * 0.621371;
+}
+
+// console.log(kmToMiles(10)); // Output: 6.21371
+
+// Q23 how to convert first letter of string in uppercase|Javascript
+
+function capitalizeFirstLetter(str) {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+}
+
+// console.log(capitalizeFirstLetter("hello world")); // Output: Hello World
+
+// Q24 how to find fibonacci sequence in javascript
+
+function fibonacci(n) {
+    if (n <= 1) {
+        return n;
+    }
+    return fibonacci(n - 1) + fibonacci(n - 2);
+}
+// console.log(fibonacci(10)); // Output: 55
+
+
+// Q25 How to Check the No of Occurrence of Character in String
+
+const str1 = "Karan Singh"
+const char = "a"
+
+function countChar(str, char) {
+    return str.split(char).length - 1;
+}
+// console.log(countChar(str1, char)); // Output: 2
+
+// using loop iteration
+const countCharacter = (str, char) => {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            count++;
+        }
+    }
+    return count;
+};
+
+// console.log(countCharacter("karan singh", "a")); // Output: 2
+
+
+// Q26 Program to Check Armstrong Number in JavaScript 
+// Q27 how to print the table of any user defined number|Javascript
+// Q28 How to print star pattern in diamond shape in js
+
+
+
+
+
+
+
+
 
 
 
