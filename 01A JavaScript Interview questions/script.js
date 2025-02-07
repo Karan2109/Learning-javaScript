@@ -369,6 +369,57 @@ const countCharacter = (str, char) => {
 
 // console.log(countCharacter("karan singh", "a")); // Output: 2
 
+const obj = {
+    a : 1,
+    b : 2,
+    c : 3,
+    "a" : 4,
+    b : 5
+}
+
+// console.log(obj) //
+
+var abc = 1 + xyz;
+var xyz = 100;
+// xyz = 100;
+// console.log(abc); // Output: Error
+
+// const data = {
+//     name: "Karan Singh"
+// };
+
+// const ar = [1, 2, 3, 4, 5]
+// console.log(delete data);
+// console.log(delete ar); // Output: undefined
+// console.log(delete ar[1]);
+
+// const [x, y] = abc
+
+// console.log(x); // Output: 1
+// console.log(y); // Output: 1
+// console.log(x, y); // Output: 1
+
+let a = []
+let b = a
+// let b = []
+
+console.log(a == b);
+console.log(a === b);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // Q26 Program to Check Armstrong Number in JavaScript 
 // Q27 how to print the table of any user defined number|Javascript
