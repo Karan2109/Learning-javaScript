@@ -20,7 +20,7 @@ arr1.push(7); // adding 7 elements to the array
 arr1.pop(); // removing last elementv from the array
 
 arr1.unshift(6); // added the element at the start of the array
-arr1.shift();
+arr1.shift(); // adeleted the element at the end of the array
 
 console.log(arr1.includes(9));
 console.log(arr1.indexOf(3));

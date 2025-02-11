@@ -45,6 +45,7 @@ const arr = [1, 2, 3, 4, 5];
 const largestValue = (arr) => {
     // Find the first largest value
     let firstLargestValue = Math.max(...arr);
+    // let firstSmallestValue = Math.min(...arr);
 
     // Remove the first largest value from the array
     const index = arr.indexOf(firstLargestValue);
@@ -81,7 +82,7 @@ const findAge = () => {
 // console.log(findAge());
 
 
-// Q5find a missing number in a given integer array of 1 to 10
+// Q5 find a missing number in a given integer array of 1 to 10
 
 const arrNum = [1,2,3,4,5,6,9,10];
 const updateMissNum = [];
@@ -198,7 +199,7 @@ const reverseString = (str) => {
 
 // Q13 How to find palindrome in javascript
 
-const pStr = "adam";
+const pStr = "madam";
 
 const isPalindrome = (str) => {
     return str.toLowerCase() === str.toLowerCase().split('').reverse().join('');
