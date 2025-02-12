@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ul class="language">
+        <li>JavaScript</li>
+    </ul>
+
+</body>
+
+<script>
+    function addlanguage(langName) { // usual method adding elements
+        const li =  document.createElement("li");
+        li.innerHTML = `${langName}`;
+        document.querySelector('.language').appendChild(li);
+    }
+    addlanguage("Python");
+    addlanguage("SQL");
+
+    function addOptilLanguage(langName) { // optimize way to writing the same above code
+        const li = document.createElement("li");
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+    }
+    addOptilLanguage("React.js");
+
+    // Edit remove language which added
+    const ele =  document.querySelector("li:nth-child(1)")
+    // ele.innerHTML = "Java"; // not an optimize way to replace the element
+    
+    const newli = document.createElement("li"); // Optimize way write the code
+    newli.textContent = "Java";
+    ele.replaceWith(newli); 
+
+    // edit
+    const firstlang = document.querySelector("li:first-child");
+    firstlang.outerHTML = "<li>C++</li>";
+
+    //remove
+    const lastlang = document.querySelector("li:last-child");
+    lastlang.remove();
+    
+</script>   
+
+</html>
