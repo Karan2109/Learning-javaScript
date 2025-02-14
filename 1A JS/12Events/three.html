@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Chai aur JS</h1>
+    <button id="stop">Stop</button>
+    <button id="start">Start</button>
+</body>
+<script>
+    let intervalId;
+
+    const sayDate = () => {
+        console.log("Karan", Date.now());
+    };
+
+    document.getElementById('start').addEventListener('click', () => {
+        // Clear any existing interval to avoid multiple intervals running
+        if (intervalId) {
+            clearInterval(intervalId);
+        }
+        // Start the interval
+        intervalId = setInterval(sayDate, 1000);
+    });
+
+    document.getElementById('stop').addEventListener('click', () => {
+        // Stop the interval
+        clearInterval(intervalId);
+    });
+
+    // const sayDate = ((str) => { // using 3rd parameter (str) (Hello)
+    //     console.log(str, Date.now());
+    // });
+    // setInterval(sayDate, 1000), "Hello";
+</script>   
+
+</html>
