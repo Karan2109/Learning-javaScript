@@ -88,7 +88,8 @@ async function consumePromiseFive() {
 consumePromiseFive()
 
 
-// using Async with try cathch block
+// using Async with try cathch block & fetch method
+
 async function getAllUsers() {
     try {
         const response = await fetch('https://jsonplaceholder.typicode.com/users');
