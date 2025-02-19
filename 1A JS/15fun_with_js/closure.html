@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Closure</title>
+</head>
+<body style="background-color: #212121;">
+    <button id="orange">Orange</button>
+    <button id="green">Green</button>
+    
+</body>
+<script>
+    // Lexical Scoping & Closure 
+    // function init() {
+    //     let name = "Closure";
+        
+    //     function displayName() {
+    //         console.log(name);
+    //     }
+        
+    //     displayName();
+    // }
+    
+    // init(); // Outputs: Closure
+
+    //  function outer() {
+    //     let username = "Anonymous"
+    //     console.log("Outer", secret); // parent cannot access child element
+        
+    //     function inner() {
+    //         let secret = "my123"
+    //         console.log("Inner", username); // child can excess parent element
+    //     }
+    //     function innerTwo() {
+    //         console.log("InnerTwo", username);
+    //         console.log(secret); //error sibling cannot share details
+    //     }
+    //     inner(); // Outputs: Anonymous
+    //     innerTwo(); // Outputs: Anonymous
+    //  }     
+    // //  outer(); // Outputs: undefined
+    //  console.log("Too Outer", username); // Outputs: undefined
+
+    // lexical scoping
+    // function makeFunc() {
+    //     const name ="Mozilla";
+    //     function displayName() {
+    //         console.log("name"); //
+    //     }
+    //     return displayName;
+    // }
+    // const myFunc = makeFunc();
+    // myFunc(); // Outputs: Mozilla
+        
+</script>
+
+<script>
+    // document.getElementById("orange").onclick = function() {
+    //         document.body.style.backgroundColor = "orange";
+    // } // Easy way to write function
+
+
+    // const orangeBtn = document.getElementById("orange");
+    // const greenBtn = document.getElementById("green");
+
+    // orangeBtn.addEventListener("click", () => {
+    //     const changeColor = () => {
+    //         document.body.style.backgroundColor = "orange";
+    //     };
+    //     changeColor();
+    // });
+
+    // greenBtn.addEventListener("click", () => {
+    //     const changeColor = () => {
+    //         document.body.style.backgroundColor = "green";
+    //     };
+    //     changeColor();
+    // });
+</script>
+
+<script>
+    // document.getElementById("orange").onclick = function() {
+    //         document.body.style.backgroundColor = "orange";
+    // }
+
+    // document.getElementById("green").onclick = function() {
+    //         document.body.style.backgroundColor = "green";
+    // }
+
+    function clickhandler(color) {
+        // document.body.style.backgroundColor = `${color}`;
+        return function() {
+            document.body.style.backgroundColor = `${color}`;
+        }
+    }
+    document.getElementById("orange").onclick = clickhandler("orange");
+    document.getElementById("green").onclick = clickhandler("green");
+</script>
+
+
+</html>
